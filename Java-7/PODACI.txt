@@ -1,0 +1,6 @@
+
+
+Naziv Laptopa : marin
+Cijena Laptopa: 5.0
+VelicinaZaslona: 6.0
+------------------------------------------- 
