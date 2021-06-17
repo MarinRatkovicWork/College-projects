@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Ispit</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="ispit.css">
+    <script>
+    var x=1;
+    
+    function prev() {
+	if (x>1)
+    {
+        x--;
+    }
+	else {
+        x=6;
+    }
+    
+	eval('img'+ x).click();
+	}
+function next() {
+	if (x<6){
+        x++;
+    }
+	else {
+        x=1;
+    }
+	eval('img'+ x).click();
+	}
+    
+    </script>
+</head>
+
+<body>
+    <div align="center">
+	<h1>Grad Čakovec</h1>
+	<br/>
+
+	<div class="thumbnail">
+		<img onclick="pregledslike.src=img1.src; document.getElementById('naslovislika').innerHTML='Centar za kulturu'; br=1;" name="img1" src="slike/centar.jpg" alt=""/>
+		<img onclick="pregledslike.src=img2.src; document.getElementById('naslovislika').innerHTML='Crkva Sv. Nikole'; br=2;" name="img2" src="slike/crkva.jpg" alt=""/>
+		<img onclick="pregledslike.src=img3.src; document.getElementById('naslovislika').innerHTML='Trgovački kasino'; br=3;" name="img3" src="slike/kasino.jpg" alt=""/>
+		<img onclick="pregledslike.src=img4.src; document.getElementById('naslovislika').innerHTML='Muzej Međimurja'; br=4;" name="img4" src="slike/muzej.jpg" alt=""/>
+		<img onclick="pregledslike.src=img5.src; document.getElementById('naslovislika').innerHTML='Spomenik Nikoli Zrinskom'; br=5;" name="img5" src="slike/spomenik.jpg" alt=""/>
+        <img onclick="pregledslike.src=img6.src; document.getElementById('naslovislika').innerHTML='Stari grad'; br=6;" name="img6" src="slike/stari.jpg" alt=""/>
+	</div>
+
+        <div class="pregledslike" align="center">
+            <img name="pregledslike" src="slike/centar.jpg" alt=""/>
+            <p name="tekst" id="naslovislika">Centar za kulturu<p>
+            <div class="naprijednazad" onclick="prev();">Prethodni</div>
+            <div class="naprijednazad" onclick="next();">Sljedeći</div> 
+        </div>
+
+    </div>
+</body>
+</html>
